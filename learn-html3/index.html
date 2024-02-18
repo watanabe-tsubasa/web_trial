@@ -18,7 +18,7 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
-
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg?si=6Tg0hknB4eCOVk9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h2>Rocking the free web</h2>
 
         <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
@@ -29,22 +29,45 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+           srcset="./public/firefox_logo-120.png 150w, ./public/firefox_logo-400.png 400w"
+           sizes="(max-width: 500px) 120px, 400px"
+           src="./public/firefox_logo-120.png"
+           alt="firefox logo"
+          />
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img
+           srcset="./public/mozilla-dinosaur-120.png 150w, ./public/mozilla-dinosaur-400.png 400w"
+           sizes="(max-width: 500px) 120px, 400px"
+           src="./public/mozilla-dinosaur-400.png"
+           alt="mozilla dinosaur"
+          />
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img
+           srcset="./public/firefox-addons-120.jpg 150w, ./public/firefox-addons-400.jpg 400w"
+           sizes="(max-width: 500px) 120px, 400px"
+           src="./public/firefox-addons-400.jpg"
+           alt="mozilla addons"
+          />
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img
+           src="./originals/mdn.svg"
+           alt="mdn"
+          />
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="./public/red-panda-600.jpg" />
+          <source media="(max-width: 1200px)" srcset="./public/red-panda-1200.jpg" />
+          <img src="./public/red-panda-1200.jpg" alt="panda" />
+        </picture>
       </div>
 
     </main>
